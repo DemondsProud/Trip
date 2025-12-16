@@ -7,7 +7,6 @@ import './Auth.css';
 export default function Dashboard() {
   const navigate = useNavigate();
 
-
   useEffect(() => {
     if (!localStorage.getItem('token')) {
       navigate('/login');

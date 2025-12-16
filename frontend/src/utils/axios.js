@@ -7,7 +7,6 @@ const axiosInstance = axios.create({
   },
 });
 
-// Add token to requests
 axiosInstance.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -19,7 +18,6 @@ axiosInstance.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Handle 401 errors
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {

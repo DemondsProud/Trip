@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../Auth.css';
-import '../../index.css'; // Corrected path
-import './AdminDashboard.css'; // New custom CSS
+import '../../index.css'; 
+import './AdminDashboard.css'; 
 
 export default function AdminDashboard() {
     const navigate = useNavigate();
@@ -51,7 +51,7 @@ export default function AdminDashboard() {
             </header>
 
             <main className="admin-content">
-                {/* Stats Grid */}
+                {}
                 <div className="stats-grid">
                     <div className="stat-card">
                         <div className="stat-header">
@@ -74,7 +74,7 @@ export default function AdminDashboard() {
                     </div>
                 </div>
 
-                {/* Dashboard Content Grid */}
+                {}
                 <div className="dashboard-grid">
                     <div className="glass-panel">
                         <h3 className="panel-title">
