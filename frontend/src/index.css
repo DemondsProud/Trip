@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #24292e;
+  /* Github-like dark */
+  --accent-color: #0366d6;
+  /* Tech Blue */
+  --border-color: #e1e4e8;
+  --code-bg: #f6f8fa;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reset specific overrides */
+h1,
+h2,
+h3,
+h4,
+buttons,
+input,
+select,
+textarea {
+  font-family: var(--font-mono);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
